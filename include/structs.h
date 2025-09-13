@@ -2826,8 +2826,6 @@ typedef struct {
 } BBBSTable;
 
 typedef union {
-<<<<<<< HEAD
-=======
     s32 patl; // offset 0x0, size 0x4
     struct {
         // total size: 0x4
@@ -2846,7 +2844,6 @@ typedef union {
 } ST;
 
 typedef union {
->>>>>>> 045b78b9420706941c1f12e8ebb7aedcbe038389
     s32 dy; // offset 0x0, size 0x4
     struct {
         // total size: 0x4

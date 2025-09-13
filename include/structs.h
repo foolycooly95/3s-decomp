@@ -2446,8 +2446,8 @@ typedef struct {
     s32 dly;    // offset 0x1C, size 0x4
     s32 amx;    // offset 0x20, size 0x4
     s32 amy;    // offset 0x24, size 0x4
-    char swx;   // offset 0x28, size 0x1
-    char swy;   // offset 0x29, size 0x1
+    s8 swx;     // offset 0x28, size 0x1
+    s8 swy;     // offset 0x29, size 0x1
 } MotionState;
 
 typedef struct {
@@ -2826,6 +2826,27 @@ typedef struct {
 } BBBSTable;
 
 typedef union {
+<<<<<<< HEAD
+=======
+    s32 patl; // offset 0x0, size 0x4
+    struct {
+        // total size: 0x4
+        s16 l; // offset 0x0, size 0x2
+        s16 h; // offset 0x2, size 0x2
+    } pats;    // offset 0x0, size 0x4
+} SST;
+
+typedef union {
+    s32 l; // offset 0x0, size 0x4
+    struct {
+        // total size: 0x4
+        s16 l; // offset 0x0, size 0x2
+        s16 h; // offset 0x2, size 0x2
+    } w;       // offset 0x0, size 0x4
+} ST;
+
+typedef union {
+>>>>>>> 045b78b9420706941c1f12e8ebb7aedcbe038389
     s32 dy; // offset 0x0, size 0x4
     struct {
         // total size: 0x4
@@ -2851,5 +2872,26 @@ typedef union {
         s16 h; // offset 0x2, size 0x2
     } rp;      // offset 0x0, size 0x4
 } PS_DP;
+
+typedef struct {
+    // total size: 0x10
+    s16 hx;     // offset 0x0, size 0x2
+    s16 hy;     // offset 0x2, size 0x2
+    s16 hz;     // offset 0x4, size 0x2
+    s8 sel_pri; // offset 0x6, size 0x1
+    s8 sel_rl;  // offset 0x7, size 0x1
+    s16 color;  // offset 0x8, size 0x2
+    s8 sel_col; // offset 0xA, size 0x1
+    s8 dspf;    // offset 0xB, size 0x1
+    s8 ichi;    // offset 0xC, size 0x1
+    s8 mts;     // offset 0xD, size 0x1
+    s16 chix;   // offset 0xE, size 0x2
+} PLEF;
+
+typedef struct {
+    // total size: 0x4
+    s16 pos_x; // offset 0x0, size 0x2
+    s16 pos_y; // offset 0x2, size 0x2
+} ImageBuff;
 
 #endif

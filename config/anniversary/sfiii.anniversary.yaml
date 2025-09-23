@@ -309,7 +309,7 @@ segments:
       - [0x104840, asm, sf33rd/Source/Game/EFFB6]
       - [0x105180, c, sf33rd/Source/Game/EFFB7]
       - [0x105280, c, sf33rd/Source/Game/EFFB8]
-      - [0x105A30, asm, sf33rd/Source/Game/effb9]
+      - [0x105A30, c, sf33rd/Source/Game/effb9]
       - [0x105E00, asm, sf33rd/Source/Game/EFFC0]
       - [0x1062F0, c, sf33rd/Source/Game/EFFC1]
       - [0x1068E0, c, sf33rd/Source/Game/EFFC2]
